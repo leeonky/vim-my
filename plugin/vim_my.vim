@@ -1,4 +1,9 @@
-" move window
+""""""""""""""""""" foldmethod
+set foldmethod=syntax
+set nofoldenable
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+""""""""""""""" move window
 nnoremap <C-h> <C-w>h
 nnoremap <C-l> <C-w>l
 nnoremap <C-j> <C-w>j
@@ -9,37 +14,7 @@ inoremap <C-j> <ESC><C-w>j
 inoremap <C-k> <ESC><C-w>k
 """""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""
-filetype on
-
-filetype plugin on
-
-set nocompatible
-
-set background=dark
-
-set cursorline
-
-set number
-
-syntax enable
-
-syntax on
-
-filetype indent on
-
-set tabstop=8
-set shiftwidth=8
-
-colorscheme default
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""
-
-""""""""""""""""""" foldmethod
-set foldmethod=syntax
-set nofoldenable
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""
-
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"""""""""""""""" save and load
 nnoremap <silent> <leader>ss :call Save_all()<cr>
 nnoremap <silent> <leader>sl :call Load_all()<cr>
 
@@ -59,7 +34,7 @@ function Load_all()
 endfunction
 """""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""
+""""""""""""""" edit vimrc
 command Conf :tabnew ~/.vimrc
 """""""""""""""""""""""""""""""""""""""""""""""""""""""
 
