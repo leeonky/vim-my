@@ -1,9 +1,3 @@
-let mapleader=","
-
-filetype on
-
-filetype plugin on
-
 " move window
 nnoremap <C-h> <C-w>h
 nnoremap <C-l> <C-w>l
@@ -13,6 +7,12 @@ inoremap <C-h> <ESC><C-w>h
 inoremap <C-l> <ESC><C-w>l
 inoremap <C-j> <ESC><C-w>j
 inoremap <C-k> <ESC><C-w>k
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""
+filetype on
+
+filetype plugin on
 
 set nocompatible
 
@@ -32,11 +32,14 @@ set tabstop=8
 set shiftwidth=8
 
 colorscheme default
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-" foldmethod
+""""""""""""""""""" foldmethod
 set foldmethod=syntax
 set nofoldenable
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""
 nnoremap <silent> <leader>ss :call Save_all()<cr>
 nnoremap <silent> <leader>sl :call Load_all()<cr>
 
@@ -54,3 +57,9 @@ function Load_all()
 	endif
 	NERDTree
 endfunction
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""
+command Conf :tabnew ~/.vimrc
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
