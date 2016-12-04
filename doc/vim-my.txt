@@ -1,0 +1,27 @@
+*vim-my.txt* A short multi line description of your plugin
+
+===============================================================================
+CONTENTS                                                               *vim-my*
+
+    1. Intro ................................................... |vim-my-intro|
+    2. Requirements ..................................... |vim-my-requirements|
+    3. Usage ................................................... |vim-my-usage|
+    4. Licence ............................................... |vim-my-licence|
+===============================================================================
+1. Intro                                                         *vim-my-intro*
+
+Overview of plugin
+
+2. Requirements                                           *vim-my-requirements*
+
+What additional programs are required to run the plugin
+
+3. Usage                                                         *vim-my-usage*
+
+How to use the plugin. What functions does it give the user?
+
+4. Licence                                                     *vim-my-licence*
+
+This is open source make sure to include a licence
+
+vim:ft=help
