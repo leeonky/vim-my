@@ -39,7 +39,7 @@ command Conf :tabnew ~/.vimrc
 """""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""
-set shell=s
-nnoremap <silent> <leader>sh :shell<CR>
+set shell=bash
+nnoremap <silent> <leader>sh :!s<CR>
 """""""""""""""""""""""""""""""""""""""""""""""""""""""
 
