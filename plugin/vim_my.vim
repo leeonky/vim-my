@@ -40,7 +40,7 @@ command Conf :tabnew ~/.vimrc
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""
 set shell=bash
-nnoremap <silent> <leader>sh :!s<CR>
+nnoremap <silent> <leader>sh :!s<CR><CR>
 """""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 let s:output_opened = 0
