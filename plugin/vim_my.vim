@@ -42,7 +42,7 @@ command Conf :tabnew ~/.vimrc
 set shell=bash
 nnoremap <silent> <leader>sh :!s<CR><CR>
 """""""""""""""""""""""""""""""""""""""""""""""""""""""
-
+nnoremap <TAB> :nohl<cr>
 let s:output_opened = 0
 
 function Execute_command(command)
