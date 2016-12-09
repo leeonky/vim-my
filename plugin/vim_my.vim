@@ -193,3 +193,7 @@ nnoremap <silent> <leader>rl :echo "Run Test in \'".@%.':'.line('.')"\'..."<cr>:
 execute "set <M-r>=\er"
 inoremap <silent> <M-r> <Esc> :echo 'Rerun test...'<cr>:call Run_last_test()<cr>
 nnoremap <silent> <M-r> :echo 'Rerun test...'<cr>:call Run_last_test()<cr>
+
+if filereadable(expand('%:p:h')."/.dev")
+	autocmd BufWritePost * silent exe ':!rtouch '.expand('<afile>')
+endif
