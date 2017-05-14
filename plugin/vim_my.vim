@@ -160,6 +160,8 @@ function Run_test_file()
 		let file = substitute(file, '/', '.', 'g')
 		let file = substitute(file, '.py$', '', '')
 		let g:test_last_test = ['python', '-m', 'unittest', file]
+	else
+		let g:test_last_test = eval('g:test_file_'.expand('%:e')) + [file]
 	endif
 	call Run_last_test()
 endfunction
@@ -174,6 +176,8 @@ function Run_test_file_at()
 		let file = substitute(file, '/', '.', 'g')
 		let file = substitute(file, '.py$', '', '')
 		let g:test_last_test = ['python', file]
+	else
+		let g:test_last_test = eval('g:test_file_'.expand('%:e').'_at') + [file.':'.line('.')]
 	endif
 	call Run_last_test()
 endfunction
