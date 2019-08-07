@@ -201,3 +201,10 @@ nnoremap <silent> <M-r> :echo 'Rerun test...'<cr>:call Run_last_test()<cr>
 if filereadable(expand('%:p:h')."/.dev")
 	autocmd BufWritePost * silent exe ':!rtouch '.expand('<afile>')
 endif
+
+au BufNewFile,BufRead *.html,*.js,*.vue set tabstop=2
+au BufNewFile,BufRead *.html,*.js,*.vue set softtabstop=2
+au BufNewFile,BufRead *.html,*.js,*.vue set shiftwidth=2
+au BufNewFile,BufRead *.html,*.js,*.vue set expandtab
+au BufNewFile,BufRead *.html,*.js,*.vue set autoindent
+au BufNewFile,BufRead *.html,*.js,*.vue set fileformat=unix
